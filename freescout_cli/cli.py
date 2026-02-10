@@ -5,8 +5,8 @@ import click
 from rich.console import Console
 from rich.table import Table
 
-from freescout import config
-from freescout.client import FreeScoutClient
+from freescout_cli import config
+from freescout_cli.client import FreeScoutClient
 
 console = Console()
 

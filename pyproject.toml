@@ -3,7 +3,7 @@ requires = ["setuptools>=77.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["freescout"]
+packages = ["freescout_cli"]
 
 [project]
 name = "freescout-cli"
@@ -25,7 +25,7 @@ dev = [
 ]
 
 [project.scripts]
-freescout = "freescout.cli:main"
+freescout = "freescout_cli.cli:main"
 
 [tool.basedpyright]
 pythonVersion = "3.12"
@@ -60,7 +60,7 @@ reportImplicitStringConcatenation = "error"
 reportUnnecessaryComparison = "error"
 reportInconsistentConstructor = "error"
 reportMissingModuleSource = "warning"
-include = ["freescout"]
+include = ["freescout_cli"]
 exclude = ["**/node_modules", "**/__pycache__", "venv", "**/tests"]
 stubPath = "stubs"
 
@@ -99,4 +99,4 @@ skip-magic-trailing-comma = false
 line-ending = "auto"
 
 [tool.ruff.lint.isort]
-known-first-party = ["freescout"]
+known-first-party = ["freescout_cli"]
